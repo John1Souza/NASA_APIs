@@ -1,0 +1,25 @@
+.hamburguer_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburguer_menu {
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .25rem;
+    cursor: pointer;
+  }
+  
+  .hamburguer_menu_line {
+    width: 1.875rem;
+    height: .5rem;
+    background-color: #fff;
+    color: #fff;
+    border-radius: .5rem;   
+    
+  }
+}
+ 

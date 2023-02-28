@@ -1,0 +1,148 @@
+
+.header_content {
+    width: 100vw;
+    height: 6.75rem;
+    background-color: #1f2839;
+    color: #fff;  
+    padding: 1.5rem;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+      
+}
+
+.navbar_container {    
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+       
+}
+
+
+
+
+.navbar_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar_item {
+    font-size: 1.3rem;
+    font-weight: 600;
+    list-style: none;
+    padding: .8rem;
+
+    a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: .25rem;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: #78C7E0;
+        padding-bottom: 1rem;  
+        border-bottom: .1rem solid #78C7E0;      
+        border-radius: .5rem;
+        
+
+
+        transition: filter .25s;
+
+        filter: brightness(0.9);
+    }
+}
+
+.hamburguer_menu_item {
+    list-style: none;
+}
+@media only screen  and (min-width: 320px) and (max-width: 480px) {
+    .navbar_container {
+        justify-content: space-between;
+    }
+    .navbar_list{
+        display: none;
+    }
+    .navbar_list_hamMenu{
+        width: 10rem;
+        height: 100vh;
+        background-color: #121212;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: all 1s ease;
+    }
+    .navbar_item_hamMenu {
+        font-weight: bold;
+        font-size: 1.375rem;
+        list-style: none;
+
+        & + li {
+            margin-top: 1rem;
+        }
+        &:hover {
+            cursor: pointer;
+            color: #0f3a97;
+    
+            transition: filter .25s;
+    
+            filter: brightness(0.8);
+        }
+    }
+    
+}
+
+@media only screen  and (min-width: 481px) and (max-width: 768px) {
+    .navbar_container {
+        justify-content: space-between;
+    }
+    .navbar_list{
+        display: none;
+    }
+    .navbar_list_hamMenu{
+        width: 20rem;
+        height: 100vh;
+        background-color: #121212;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: all 1s ease;
+    }
+    .navbar_item_hamMenu {
+        font-weight: bold;
+        font-size: 2.375rem;
+        list-style: none;
+
+        & + li {
+            margin-top: 1rem;
+        }
+        &:hover {
+            cursor: pointer;
+            color: #0f3a97;
+    
+            transition: filter .25s;
+    
+            filter: brightness(0.8);
+        }
+    }
+}
